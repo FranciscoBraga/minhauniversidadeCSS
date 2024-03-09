@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head><!--Contém os metadados do documento :cabeçalho-->
+        <meta charset="UTF-8"><!--A sigla "UTF-8" representa um esquema de caracteres 
+            ordenado que abrange uma ampla gama de caracteres e símbolos de diferentes idiomas e escritas. É uma forma de representar caracteres que vai além dos caracteres ASCII básicos e inclui caracteres acentuados, 
+            caracteres de scripts não latinos, símbolos matemáticos, emojis e muito mais-->
+        <!--Defina metadados, como conjunto de caracteres, descrição da página, palavras-chave, etc.-->
+       <meta name="description" content="Descrição da página">
+       <meta name="keywords" content="palavra-chave1, palavra-chave2">
+
+       <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+       <meta name="viewport" content="width=350, initial-scale=2.0">
+        <title>Página Inicial</title><!--O elemento <title> é um metadado que representa o título de todo o document HTML-->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../recursos/normalize/normalize.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!--O elemento <link> é utilizado para vincular conteúdos de outros arquivos na página de código HTML-->
+        <link rel="stylesheet" href="../estilo/estilo.css"><!--Esse atributo define o relacionamento entre o arquivo em que o comando está escrito e o arquivo que é definido no caminho do hre-->
+        <!--é o href, que é usado para determinar a localização do arquivo acessado-->
+        <!-- existe três formas para trabalhar com CSS 
+           Inline style - quando o estilo(css) é aplicado diretamente na tag
+           <body style="width :600px;">
+           internal style sheet - quando o estilo(css) é desenvolvido no head da página.
+       <style type="text/css">
+         img{
+            border: 2px solid black;
+         }
+       </style>
+       Exernal style sheet - quando o estilo(css) é desenvolvido num arquivo externo separado da página html.
+       <link rel="stylesheet" href="estilo/estilo.css">   
+      -->
+    
+    </head>
+<body>
+</head>
+
+<body ><!--aqui está parte visivel do html-->
+    <header>
+        <section>
+            <div id="link_portal">
+                <a href="#">Portal Professor</a>
+                <a href="#">Portal Aluno</a>
+            </div>
+        </section>
+        <section>
+            <div id="logo"><p>Minha</p><span> Universidade</span></div>
+             <!--htmnl tem elemento aninhado-->
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li><!--Os atributos fornecem informações adicionais sobre os elementos-->
+                       <li><a href="Contato/formulario_contato.html">Contatos</a></li>
+                        <!--O 'href' é uma atributo  que especifica o URL da página para a qual o link leva.-->
+                        <li><a href="Curso/nossos_cursos.html">Cursos</a></li>
+                        <li><a href="sobre/instituicao.html">Sobre</a></li><!--Os atributos geralmente vêm em pares nome/valor como: nome="valor"-->
+                        <li>
+                            <div id="icone_lupa">
+                                <img src="../recursos/icones/lupa.png" alt="">
+                            </div>
+                            <form action="">
+                                <input  type="search" name="pesquisar" id="pesquisar">
+                            </form>
+                        </li>
+                   </ul>
+                </nav>
+            </div>
+            <span class="material-symbols-outlined">
+                menu
+            </spans>
+        </section>
+        <div class="limpa"></div>
+    </header>
+
+    <section id="capa">
+        <img src="../img/capa/estudo.jpg" alt="estudantes da universidade" >
+        <!-- width é a largura e o height e a altura.-->
+        <!-- O 'src' é um atributo que especifica o caminho para a imagem a ser exibida.-->
+        <!--O 'alt' especifica um texto alternativo, caso a imagem não poder ser exibida.-->  
+    </section>
+
+    <section id="formulario" >
+        <h1>Contato</h1>
+
+        <form action="cadastro.php" method="post"><!--post e get-->
+            <!--O <form>elemento é um contêiner para diferentes tipos de elementos de entrada, 
+            como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.-->
+        <fieldset>
+            <legend>Cadastro de Inscrito</legend>
+            <!--o elemento input cria um campo para coleta de dados -->
+            <!--o atributo type altera a forma que o elemento input é  exibido-->
+            <div id="section_flex">
+                <section class="section1">
+                    <label for="nome">Digite o seu nome :</label><!-- especifica qual o "rótulo" do input (a que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”) o "for" faz uma ligação entre o a etiqueta e o id do input -->
+                    <input type="text" name="nome" id="nome" placeholder="Nome"><!--o atributo type = "text"  é exibido um campo de texto-->
+                    <label for="sobrenome">Digite o seu sobrenome :</label><!-- especifica qual o "rótulo" do input (a que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”) o "for" faz uma ligação entre o a etiqueta e o id do input -->
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome"><!--o atributo type = "text"  é exibido um campo de texto-->
+                    <label for="idade">Digite a sua idade :</label>
+                    <input type="text" name="idade" id="idade" placeholder="Idade">
+                    <label for="email">Digite seu e-mail:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="senha">Digite seu telefone:</label>
+                    <input type="password" name="senha" id="senha">
+                    <div id="radion_button">
+                        <label for="genero">Qual o seu Gênero</label>
+                        <input type="radio" name="genero" id="genero" value="masculino">Masculino<!--o atributo type = "radio"  é exibido  botão de opção , Cria um botão de rádio, permitindo que o usuário escolha uma opção de um conjunto.-->
+                        <input type="radio" name="genero" id="genero" value="feminino">Feminino
+                        <input type="radio" name="genero" id="genero" value="Outros">Outros   
+                    </div>
+                    <div>
+                        <label for="esporte">Digite quais esportes você pratica: </label>
+                        <input type="checkbox" name="esporte" id="esporte" value="Futebol">Futebol<!--As caixas de seleção permitem que você selecione valores exclusivos para envio em um formulário (ou não).-->
+                        <input type="checkbox" name="esporte" id="esporte" value="Tênis">Tênis
+                        <input type="checkbox" name="esporte" id="esporte" value="Volêi"> Volêi
+                        <input type="checkbox" name="esporte" id="esporte" value="Golf">Golf
+                        <input type="checkbox" name="esporte" id="esporte" value="Corrida">Corrida
+                        <input type="checkbox" name="esporte" id="esporte" value="Caminhada"> Caminhada 
+                    </div>
+                </section>
+                <section class="section1">
+
+                    <label for="data_nascimento">Digite a data do seu Nascimento</label>
+                    <input type="date" name="data_nascimento" id="data_nascimento"> 
+                    <label for="curso">Qual curso você deseja realizar :</label>
+                    <select name="curso" id="curso">
+                        <option value="Selecione">Selecione um curso</option><!-- representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <option> , que podem ser agrupados por elementos <optgroup> . As opções podem ser pré-selecionadas para o usuário.-->
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Node">Node</option>
+                        <option value="Bootstrap">Bootstrap</option>
+                    </select>
+                </section>
+                <section class="section2">
+            </div>
+                <label for="texto">Fale um pouco de você:</label>
+                <textarea name="texto" id="texto" cols="30" rows="10"></textarea><!--útil quando você quer permitir ao usuário informar um texto extenso em formato livre,-->
+            
+                <input type="file" name="foto">
+            
+                <input type="submit" value="enviar">
+            </section>
+         </fieldset>
+        </form>
+    </section>
+ <!--rodapé-->
+
+ <footer>
+    <p id="rodape_logo">
+     logo da empresa
+    </p>
+<div id="rodape_dados">
+<div class="rodape_item">
+    <p>Contato
+        Call Center
+        (65) 3052 8120 / (65) 3324 2001</p>
+        <p>E-mail
+            atendimento@unifacc.com.br
+            
+            Celular</p>
+    </div>
+
+<div class="rodape_item">
+    <address>
+        Horário de Funcionamento
+        08h às 22h (horário local)
+        
+        Endereço
+        R. Pimenta Bueno, 534
+        Dom Aquino
+        Cuiabá – MT, 78015-190</address>
+</div>
+<div class="rodape_item">
+    <a href="admin/login.html"></a>
+    <ul>
+      <li><a href=""><img src="img/redes_sociais/facebook.png" alt="facebook"  width="25px"></a></li>
+      <li><a href=""><img src="img/redes_sociais/instagram.png" alt="instagram"  width="25px"></a></li>
+      <li><a href=""><img src="img/redes_sociais/linkedin_4494498.png" alt="linkedin"  width="25px"></a></li>
+      <li><a href=""><img src="img/redes_sociais/twitter.png" alt="twitter"  width="25px"></a></li>
+      <li><a href=""><img src="img/redes_sociais/whatsapp.png" alt="whatsapp"  width="25px"></a></li>
+      <li><a href=""><img src="img/redes_sociais/youtube.png" alt="youtube"  width="25px"></a></li>
+     </ul>
+</div>
+</div>
+  <span>Produzido por Francisco O Braga</span>
+</footer>
+
+</body>
+</html>

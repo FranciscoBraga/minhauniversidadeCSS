@@ -1,0 +1,202 @@
+<!DOCTYPE html> <!--Indica qual o tipo de documento-->
+<html lang="pt-br"><!-- O elemento raiz html e define todo o documento-->
+<!-- O atributo lang serve para indicar ao  navegador o idioma da página-->
+<head><!--Contém os metadados do documento :cabeçalho-->
+    <meta charset="UTF-8"><!--A sigla "UTF-8" representa um esquema de caracteres 
+        ordenado que abrange uma ampla gama de caracteres e símbolos de diferentes idiomas e escritas. É uma forma de representar caracteres que vai além dos caracteres ASCII básicos e inclui caracteres acentuados, 
+        caracteres de scripts não latinos, símbolos matemáticos, emojis e muito mais-->
+    <!--Defina metadados, como conjunto de caracteres, descrição da página, palavras-chave, etc.-->
+   <meta name="description" content="Descrição da página">
+   <meta name="keywords" content="palavra-chave1, palavra-chave2">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title><!--O elemento <title> é um metadado que representa o título de todo o document HTML-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="recursos/normalize/normalize.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!--O elemento <link> é utilizado para vincular conteúdos de outros arquivos na página de código HTML-->
+    <link rel="stylesheet" href="estilo/estilo.css"><!--Esse atributo define o relacionamento entre o arquivo em que o comando está escrito e o arquivo que é definido no caminho do hre-->
+    <!--é o href, que é usado para determinar a localização do arquivo acessado-->
+    <!-- existe três formas para trabalhar com CSS 
+       Inline style - quando o estilo(css) é aplicado diretamente na tag
+       <body style="width :600px;">
+       internal style sheet - quando o estilo(css) é desenvolvido no head da página.
+   <style type="text/css">
+     img{
+        border: 2px solid black;
+     }
+   </style>
+   Exernal style sheet - quando o estilo(css) é desenvolvido num arquivo externo separado da página html.
+   <link rel="stylesheet" href="estilo/estilo.css">   
+  -->
+
+</head>
+
+<body ><!--aqui está parte visivel do html-->
+    <header>
+        <section>
+            <div id="link_portal">
+                <a href="#">Portal Professor</a>
+                <a href="#">Portal Aluno</a>
+            </div>
+        </section>
+        <section>
+            <div id="logo"><p>Minha</p><span> Universidade</span></div>
+             <!--htmnl tem elemento aninhado-->
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li><!--Os atributos fornecem informações adicionais sobre os elementos-->
+                       <li><a href="Contato/formulario_contato.html">Contatos</a></li>
+                        <!--O 'href' é uma atributo  que especifica o URL da página para a qual o link leva.-->
+                        <li><a href="Curso/nossos_cursos.html">Cursos</a></li>
+                        <li><a href="sobre/instituicao.html">Sobre</a></li><!--Os atributos geralmente vêm em pares nome/valor como: nome="valor"-->
+                        <li>
+                            <div id="icone_lupa">
+                                <img src="recursos/icones/lupa.png" alt="">
+                            </div>
+                            <form action="">
+                                <input  type="search" name="pesquisar" id="pesquisar">
+                            </form>
+                        </li>
+                   </ul>
+                </nav>
+            </div>
+            <span class="material-symbols-outlined">
+                menu
+            </spans>
+        </section>
+        <div class="limpa"></div>
+    </header>
+    <section id="capa">
+        <img src="img/capa/estudo.jpg" alt="estudantes da universidade" >
+        <!-- width é a largura e o height e a altura.-->
+        <!-- O 'src' é um atributo que especifica o caminho para a imagem a ser exibida.-->
+        <!--O 'alt' especifica um texto alternativo, caso a imagem não poder ser exibida.-->
+        
+    </section>
+    <section id="postagem">
+        <h1>Postagem do Blog</h1><!--cabeçalho--  vai de h1 a h6 conforme a prioridade-->
+        <div id="blog">
+                <div class="item">
+                    <img src="img/cursos/3.jpg" alt="estudantes da universidade" width="330px">
+                </div>
+                <div class="item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. In quis vitae a auctor aliquam. Id gravida iaculis nunc sodales ipsum montes blandit tincidunt convallis. Ultrices amet in pellentesque dui ut vel ut. Eu duis dui praesent duis tellus sit quam tincidunt. Mauris nullam venenatis pellentesque egestas tempus a. Consectetur amet aliquam magna ac tempor integer. Nibh sed augue donec feugiat non eget. Mi penatibus morbi est interdum mauris blandit. Quis amet neque enim odio viverra cursus posuere sed rhoncus.
+                    </p>
+                    <ul><!--lista não ordenado-->
+                        <li>Anterior</li><!--item da lista -->
+                        <li>Próximo</li>
+                    </ul>
+               </div>
+        </div>
+    </section>
+    <section  id="exposicao_curso">
+        <h1>O que estamos ensinando ?</h1>
+        <div id="nossos_cursos">
+            
+            <div class="curso" >
+                <img src="img/cursos/1.jpg" alt="estudantes da universidade" >
+                <p class="cursos_disponiveis">Bibliotecaria</p>
+                <p class="resumo_curso">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus 
+                    <a href="http://">Leia +</a>
+                </p>
+                
+                <div class="efeito_branco"></div>
+            </div>
+            <div class="curso">
+                <img src="img/cursos/2.jpg" alt="estudantes da universidade" >
+                <p class="cursos_disponiveis">Bibliotecaria</p>
+                <p class="resumo_curso">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus 
+                    <a href="http://">Leia +</a>
+                </p>
+                
+                <div class="efeito_branco"></div>
+            </div>
+            <div class="curso">
+                <img src="img/cursos/3.jpg" alt="estudantes da universidade" >
+                <p class="cursos_disponiveis">Bibliotecaria</p>
+                <p class="resumo_curso">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus 
+                    <a href="http://">Leia +</a>
+                </p>             
+                <div class="efeito_branco"></div>
+            </div>
+            <div class="curso">
+                <img src="img/cursos/4.jpg" alt="estudantes da universidade" >
+                <p class="cursos_disponiveis">Bibliotecaria</p>
+                <p class="resumo_curso">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus 
+                    <a href="http://">Leia +</a>
+                </p>
+                <div class="efeito_branco"></div>
+            </div>
+        </div>
+         <div id="icone_mais">
+            <a href="http://"><img src="img/sites/mais.png" alt="estudantes da universidade" width="32px"></a></div>
+   </section>
+   <section id="atuacao">
+      <h3>Cidades que Atuamos</h3>
+     <div id="mapa">  
+        <div id="clica_mapa">
+            <img src="img/sites/MAPA-2023-LEGENDA (1).jpg" alt="" >
+        </div>
+        <div id="cidade">   
+            <div>
+                <img src="img/caceres.jpg" alt="estudantes da universidade" >
+                <div>
+                    <p>Técnologia - Técnico de Informática</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta et corrupti doloremque deleniti! Saepe laboriosam enim, vel nihil voluptates asperiores praesentium dolore officia in rerum quisquam numquam odio, totam eaque!</p>
+                
+            </div>
+        </div>
+     </div>
+     <div class="limpa"></div>
+   </section>
+   
+  <!--rodapé-->
+
+  <footer>
+        <p id="rodape_logo">
+         logo da empresa
+        </p>
+<div id="rodape_dados">
+    <div class="rodape_item">
+        <p>Contato
+            Call Center
+            (65) 3052 8120 / (65) 3324 2001</p>
+            <p>E-mail
+                atendimento@unifacc.com.br
+                
+                Celular</p>
+        </div>
+
+    <div class="rodape_item">
+        <address>
+            Horário de Funcionamento
+            08h às 22h (horário local)
+            
+            Endereço
+            R. Pimenta Bueno, 534
+            Dom Aquino
+            Cuiabá – MT, 78015-190</address>
+    </div>
+    <div class="rodape_item">
+        <a href="admin/login.html"></a>
+        <ul>
+          <li><a href=""><img src="img/redes_sociais/facebook.png" alt="facebook"  width="25px"></a></li>
+          <li><a href=""><img src="img/redes_sociais/instagram.png" alt="instagram"  width="25px"></a></li>
+          <li><a href=""><img src="img/redes_sociais/linkedin_4494498.png" alt="linkedin"  width="25px"></a></li>
+          <li><a href=""><img src="img/redes_sociais/twitter.png" alt="twitter"  width="25px"></a></li>
+          <li><a href=""><img src="img/redes_sociais/whatsapp.png" alt="whatsapp"  width="25px"></a></li>
+          <li><a href=""><img src="img/redes_sociais/youtube.png" alt="youtube"  width="25px"></a></li>
+         </ul>
+    </div>
+</div>
+      <span>Produzido por Francisco O Braga</span>
+  </footer>
+</body>
+
+</html>

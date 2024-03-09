@@ -1,0 +1,384 @@
+@font-face {/*regra para fonte - fonte externas */
+    font-family:'Inika';
+    src: url('../recursos/fontes/Inika-Regular.ttf')
+    format('truetype');
+}
+
+
+.material-symbols-outlined{
+    display: none;
+}
+/*na declaração do estilo css temos o seletor  as chaves a propiedade e valor*/
+
+*{/*retirando as margin e o padding da pagina o asteristico é  chamado de seletor universal esse seletor atinge todas as tag individualmente*/
+   margin: 0;
+   padding: 0;
+   font-family:'Inika','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*-----seletores de elementos---------------------*/
+a {/*Seletor elementos*/
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+a:hover{ /*selector de foco*/
+    color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.limpa{/*seletor de classe que pode ser utilizado mais de uma vez na paágina*/
+    clear: both;
+}
+
+/*----------cabecallho-------------------*/
+
+header{
+    width: 100%;
+    background-color: #333174;
+    padding: 1px 1px 10px 1px; 
+    position: fixed;
+    z-index: 1;
+}
+
+#link_portal{/*seletor id deve ser utilizado uma vez por página*/
+    width: 30%;
+    margin: auto;
+}
+#link_portal a{
+    padding: 5px 20px;  
+    
+}
+
+/*---------------------posionamento-------------------------*/
+#logo{
+    float: left;
+    margin: 15px;
+   
+}
+
+#logo p {
+    color: antiquewhite;
+}
+#logo span{
+    color: #f89c30;
+}
+
+
+#menu{
+    float: right;
+}
+
+nav ul li{/*seletor descedente*/
+    float: left;
+    margin: 20px 25px;
+}
+nav ul li>a{
+    font-size: 20px;
+    color: white;
+}
+
+nav ul li>a:hover{
+     color: antiquewhite;
+     border-bottom: 1px sandybrown solid;
+}
+
+li>form{ /*select fiho mais próximo*/
+    margin-left: 60px;
+
+}
+li>form input[type=search]{
+    padding: 5px;
+    border-radius: 0px 10px 10px 0;
+    border: none;
+
+}
+li>form input[type=search]:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+
+#icone_lupa{
+    position:absolute;
+    right:222px;
+    background-color: white;
+    border-radius: 10px 0  0 10px;
+}
+
+#icone_lupa img{
+    width: 15px;
+    padding: 5px 5px 4px 5px;
+    transform: scaleX(-1);
+}
+
+section #capa{
+    margin: 0;
+}
+#capa img{
+    width: 100%;
+}
+
+/*--------------------postagem do blog--------------------------------*/
+#postagem{
+    margin: 25px 5px;
+    padding: 10px;
+}
+#postagem h1{
+    color: #f89c30;
+}
+
+#blog{
+    display: flex;
+}
+
+.item{
+    margin: 5px;
+}
+.item img{
+   width: 152%;
+}
+
+.item p{
+    text-align: justify;
+    width: 70%;
+    margin-left:180px ;
+    font-size: 1.2em;
+}
+.item ul{
+    display: flex;
+    margin-left: 400px;
+    
+}
+.item ul li{
+    margin: 25px;
+}
+
+
+/*-----------------------nossos_cursos----------------------------*/
+#exposicao_curso{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#exposicao_curso h1{
+    margin: 10px auto;
+    width: 42%;
+}
+
+#nossos_cursos{
+    display: flex;
+   
+
+}
+#nossos_cursos .curso{
+    width: 210px;
+    height: 425px;
+    background-color: #DCDCDC;
+    margin: 17px;
+}
+
+
+
+#nossos_cursos .curso img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px  10px 0 0;
+    /*background: rgba(225, 225, 225, 0.8);*/
+}
+
+
+#nossos_cursos .curso .efeito_branco{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.03), rgba(255,255,255,0.9));
+    /*background-color: rgba(255, 255, 255, 0.);*/
+    position: relative;
+    bottom: 225px;
+    /*opacity: 0.6;*/
+
+}
+
+#nossos_cursos .curso .resumo_curso{
+   display: none;
+   position: relative;
+   bottom: 200px;
+}
+
+#nossos_cursos .curso:hover ~ .resumo_curso{
+  display: block;
+}
+
+#nossos_cursos .curso .resumo_curso a{
+    width: 80%;
+    padding: 20px 10px;
+     display: block;
+    font-size: 1.3em;
+
+ }
+
+.cursos_disponiveis{
+    position: relative;
+    top:-400px;
+    right:1px;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 100%;
+} 
+
+#icone_mais{
+    margin: 20px auto;
+    width: 5%;
+}
+/*----cidades de atuacao------------------------------------------*/
+#atuacao{
+    margin:10px;
+    padding: 10px ;
+}
+#atuacao h3{
+   width: 19.5%;
+   margin: 20px auto;
+}
+
+#mapa{
+    width: 90%;
+}
+#mapa img{
+    width: 300px;
+}
+#mapa #clica_mapa{
+    float: left;
+    width: 65%;
+}
+#mapa #clica_mapa img{
+    width: 90%;
+}
+#mapa #cidade{
+    float: right;
+    width: 35%;  
+}
+
+#mapa #cidade img{
+    width: 90%;
+}
+#mapa #cidade img+div{/*operador de irmão adjacente +*/
+    margin: 5px 0 ;
+   
+}
+#mapa #cidade img~p{/* ~ o elemento sendo selecionado não precisa suceder imediatamente o primeiro, mas em qualquer lugar depois.*/
+    margin: 5px;
+    
+}
+
+/*--------------------footer------------------------------------*/
+footer{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #257d4c;
+    border-top: #f89c30 3px solid;
+}
+
+footer #rodape_logo{
+    width: 20%;
+    margin: 20px auto;
+}
+
+footer #rodape_dados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+footer #rodape_dados .rodape_item{
+    width: 25%;
+}
+
+footer #rodape_dados .rodape_item ul{
+   display: flex;
+   flex-direction: row;
+    justify-content: space-around;
+}
+
+/*-------------------formulários------------------------------*/
+#formulario{
+    margin: 5px;
+    padding: 5px; 
+}
+
+#formulario input{
+    padding: 7px;
+    margin: 5px;
+    width:90%;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    border-radius: 0 0 0 5px;
+    
+}
+
+#formulario  #section_flex label{
+    width:100%;
+    display: block;
+}
+
+#formulario #section_flex #genero{
+    width:10%;
+}
+#formulario  #section_flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+#formulario  #section_flex .section1{
+    width: 50%;
+}
+
+#formulario input:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+
+
+
+/*------------------media queries--------------------------*/
+@media only screen and (max-width:599px){
+
+   /*----------cabecallho-------------------*/
+    header{
+        width: 100%;
+        background-color: #333174;
+        padding: 1px 1px 5px 1px; 
+        position: fixed;
+        z-index: 1;
+    }
+
+    #link_portal{/*seletor id deve ser utilizado uma vez por página*/
+        display: none;
+        width:100%;
+        margin: 0 auto;
+    }
+    #link_portal a{
+        color: bisque;
+        font-size: 1.1em;
+        padding: 5px 5px;  
+        
+    }
+    #menu{
+      display: none; 
+    }
+
+    .material-symbols-outlined{
+        display:inline;
+        float: right;
+        color: white;
+        margin: 20px 10px 0 0;
+
+    }
+
+}
